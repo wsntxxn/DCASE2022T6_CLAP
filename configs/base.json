@@ -1,0 +1,19 @@
+{
+    "seed": 0,
+    "disable_nan_checks": false,
+    "skip_tboard": false,
+    "log_name": "info.json",
+    "metrics": [
+        "t2a_metrics",
+        "a2t_metrics"
+    ],
+    "trainer": {
+        "save_only_best": true,
+        "save_dir": "experiments/",
+        "save_period": 10,
+        "val_freq": 1,
+        "verbosity": 2,
+        "tensorboard": true,
+        "monitor": "max val_t2a_metrics_geometric_mean_R1-R5-R10"
+    }
+}

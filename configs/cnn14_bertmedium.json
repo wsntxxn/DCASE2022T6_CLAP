@@ -1,0 +1,49 @@
+{
+    "inherit_from": "configs/data.json",
+    "model": {
+        "audio_encoder": {
+            "type": "models.audio_encoder.Cnn14",
+            "args": {
+                "sample_rate": 32000,
+                "pretrained": "./pretrained_models/Cnn14_mAP=0.431.pth"
+            }
+        },
+        "text_encoder": {
+            "type": "models.text_encoder.Bert",
+            "args": {
+                "model_type": "prajjwal1/bert-medium"
+            }
+        },
+        "type": "models.audio_text_model.AudioSingleTextClap",
+        "args": {
+            "audio_dim": 2048,
+            "text_dim": 512,
+            "shared_dim": 1024
+        }
+    },
+    "optimizer": {
+        "type": "torch.optim.Adam",
+        "args": {
+            "lr": 1e-4
+        }
+    },
+    "trainer": {
+        "train_iterations": 100,
+        "val_interval": 10,
+        "save_period": 5,
+        "epochs": 1,
+        "save_only_best": false,
+        "num_keep_ckpts": 1
+    },
+    "lr_scheduler": {
+        "type": "utils.lr_scheduler.cosine_with_warmup",
+        "args": {
+            "train_iterations": 100,
+            "warmup_iterations": 20
+        }
+    },
+    "loss": {
+        "type": "models.loss.InfoNceLoss",
+        "args": {}
+    }
+}

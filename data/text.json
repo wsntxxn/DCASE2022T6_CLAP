@@ -1,0 +1,109 @@
+{
+    "audios": [
+        {
+            "audio_id": "Y02-7M3l_imo.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part01/Y02-7M3l_imo.wav",
+            "captions": [
+                {
+                    "caption": "Car engine revving",
+                    "audiocap_id": 2637,
+                    "cap_id": "1",
+                    "tokens": "car engine revving"
+                }
+            ]
+        },
+        {
+            "audio_id": "YuHFMkJFS-gY.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part38/YuHFMkJFS-gY.wav",
+            "captions": [
+                {
+                    "caption": "A series of bird wing flapping followed by a man speaking",
+                    "audiocap_id": 95391,
+                    "cap_id": "1",
+                    "tokens": "a series of bird wing flapping followed by a man speaking"
+                }
+            ]
+        },
+        {
+            "audio_id": "Y-lUskQtTyE8.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part00/Y-lUskQtTyE8.wav",
+            "captions": [
+                {
+                    "caption": "A woman speaking in a different language",
+                    "audiocap_id": 1975,
+                    "cap_id": "1",
+                    "tokens": "a woman speaking in a different language"
+                }
+            ]
+        },
+        {
+            "audio_id": "YUoyLo_ehkGM.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part24/YUoyLo_ehkGM.wav",
+            "captions": [
+                {
+                    "caption": "A vehicle idles and revs an engine",
+                    "audiocap_id": 58973,
+                    "cap_id": "1",
+                    "tokens": "a vehicle idles and revs an engine"
+                }
+            ]
+        },
+        {
+            "audio_id": "YUwWKwrActJ0.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part24/YUwWKwrActJ0.wav",
+            "captions": [
+                {
+                    "caption": "A man speaks, a bomb explodes, and then two man speak again",
+                    "audiocap_id": 59151,
+                    "cap_id": "1",
+                    "tokens": "a man speaks a bomb explodes and then two man speak again"
+                }
+            ]
+        },
+        {
+            "audio_id": "Y7li4oPDlkvo.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part09/Y7li4oPDlkvo.wav",
+            "captions": [
+                {
+                    "caption": "A bell is dinging and then a train honks its horn several times",
+                    "audiocap_id": 20744,
+                    "cap_id": "1",
+                    "tokens": "a bell is dinging and then a train honks its horn several times"
+                }
+            ]
+        },
+        {
+            "audio_id": "Y5Z3llZRdhYM.wav",
+            "file_name": "/mnt/lustre/sjtu/shared/data/raa/AudioSet/unbalanced_train/audio/unbalanced_train_segments_part07/Y5Z3llZRdhYM.wav",
+            "captions": [
+                {
+                    "caption": "A man speaks followed by a sizzle sound",
+                    "audiocap_id": 15992,
+                    "cap_id": "1",
+                    "tokens": "a man speaks followed by a sizzle sound"
+                }
+            ]
+        },
+        {
+            "audio_id": "00344d14395c7a1f48c9e430a8e3a745",
+            "captions": [
+                {
+                    "caption": "A train comes near but leaves without stopping as people talk in the background.",
+                    "cap_id": "1"
+                }
+            ],
+            "raw_name": "vertrek2.wav"
+        },
+        {
+            "audio_id": "public_square-milan-1044-40061-a.wav",
+            "file_name": "/mnt/lustre/sjtu/home/zyx29/work/mygit/captioning/data/MACS/audio_links/public_square-milan-1044-40061-a.wav",
+            "captions": [
+                {
+                    "caption": "ambient noise from traffic and people talking and walking",
+                    "annotator_id": 358,
+                    "cap_id": "0"
+                }
+            ]
+        }
+    ]
+}

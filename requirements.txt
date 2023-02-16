@@ -1,0 +1,17 @@
+mergedeep
+numpy
+scipy
+zsvision
+tqdm
+torch
+h5py
+librosa
+mock
+typeguard
+psutil
+humanize
+diffdist
+timm
+torchaudio
+torchlibrosa
+transformers

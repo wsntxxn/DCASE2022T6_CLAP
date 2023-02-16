@@ -1,0 +1,66 @@
+{
+    "inherit_from": "configs/base.json",
+    "eval_mode": "test_run",
+    "data_loader": {
+        "dataset": "clotho_audiocaps_macs",
+        "dataset_settings": {
+            "train": {
+                "type": "data_loader.AudioSingleTextDataset",
+                "args": {
+                    "text_file": "data/text.json",
+                    "audio_file": "data/waveform.csv",
+                    "audio_duration": 10
+                }
+            },
+            "val": {
+                "type": "data_loader.AudioTextDataset",
+                "args": {
+                    "text_file": "data/text.json",
+                    "audio_file": "data/waveform.csv"
+                }
+            },
+            "test": {
+                "type": "data_loader.AudioTextDataset",
+                "args": {
+                    "text_file": "data/text.json",
+                    "audio_file": "data/waveform.csv"
+                }
+            }
+        },
+        "args": {},
+        "batch_size": 128,
+        "num_workers": 4,
+        "collate_fn":{
+            "type": "data_loader.collate_fn_single_text",
+            "args": {
+                "tokenizer_type": "prajjwal1/bert-medium",
+                "max_text_length": 30
+            }
+        },
+        "test_collate_fn": {
+            "type": "data_loader.collate_fn_transformers",
+            "args": {
+                "tokenizer_type": "prajjwal1/bert-medium",
+                "max_text_length": 30
+            }
+        }
+    },
+    "metrics":[
+        "t2a_metrics",
+        "a2t_metrics"
+    ],
+    "eval_settings": {
+        "data_loader": {
+            "args": {
+                "split_name": "test",
+                "num_test_captions": 5
+            }
+        },
+        "tester": {
+            "save_dir": "experiments/",
+            "verbosity": 2
+        },
+        "disable_gpu": false,
+        "batch_size": 16
+    }
+}
