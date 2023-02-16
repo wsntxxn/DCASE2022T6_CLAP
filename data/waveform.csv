@@ -1,0 +1,11 @@
+audio_id	hdf5_path
+bus-lyon-1073-40106-a.wav	/mnt/lustre/sjtu/home/xnx98/work/SceneEmbedding/SceneClassify/data/dcase2019_1a/waveform.h5
+Y5Z3llZRdhYM.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/16.h5
+Y02-7M3l_imo.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/33.h5
+Y7li4oPDlkvo.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/34.h5
+00344d14395c7a1f48c9e430a8e3a745	/mnt/lustre/sjtu/home/xnx98/work/AudioCaption/data/clotho_v2/dev/waveform_32k.h5
+YUwWKwrActJ0.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/32.h5
+Y-lUskQtTyE8.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/36.h5
+YUoyLo_ehkGM.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/32.h5
+public_square-milan-1044-40061-a.wav	/mnt/lustre/sjtu/home/xnx98/work/SceneEmbedding/SceneClassify/data/dcase2019_1a/waveform.h5
+YuHFMkJFS-gY.wav	/mnt/lustre/sjtu/home/xnx98/work/AudioTagging/audioset_tagging/data/audioset/unbalanced_train/waveform/hdf5/8.h5
