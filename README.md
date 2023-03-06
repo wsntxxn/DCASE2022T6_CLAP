@@ -53,3 +53,6 @@ The training scripts use slurm wordload manager. It is also based on distributed
 ```bash
 $ sbatch scripts/run_ddp.sh
 ```
+
+## Pre-trained Checkpoints
+We provide a pre-trained checkpoint of CNN14-BERTbase model [here](https://github.com/wsntxxn/DCASE2022T6_CLAP/releases/tag/v1.0.0).
