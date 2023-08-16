@@ -342,7 +342,8 @@ class DdpTrainer(IterationTrainer):
             if self.mini_train and batch_idx > 3:
                 break
 
-            if self.config["lr_scheduler"]["type"] in ["Noam", "CosineWithWarmup"]:
+            scheduler_type = self.config["lr_scheduler"]["type"].split(".")[-1]
+            if scheduler_type in ["NoamScheduler", "cosine_with_warmup"]:
                 self.lr_scheduler.step()
 
             self.iteration += 1
@@ -353,7 +354,8 @@ class DdpTrainer(IterationTrainer):
         
 
         if self.lr_scheduler is not None:
-            if self.config["lr_scheduler"]["type"] not in ["Noam", "CosineWithWarmup"]:
+            scheduler_type = self.config["lr_scheduler"]["type"].split(".")[-1]
+            if scheduler_type not in ["NoamScheduler", "cosine_with_warmup"]:
                 self.lr_scheduler.step()
 
         # self.logger.info(f"LR {self.lr_scheduler.get_last_lr()}")
